@@ -1,117 +1,81 @@
-/* Estilo Geral */
-body {
-    font-family: Arial, sans-serif;
+/* === ESTILIZAÇÃO GERAL === */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
-    color: #23406e;
+    box-sizing: border-box;
 }
 
-/* Cabeçalho */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #23406e 30%, #157f3e 100%);
+    color: white;
+}
+
+/* === ESTILIZAÇÃO DO CABEÇALHO === */
 header {
-    background: #23406e;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 50px 20px;
 }
 
 header h1 {
-    margin: 10px 0;
-    font-size: 2.8em;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
+/* === FOTO DE PERFIL === */
 .foto-perfil {
     display: block;
-    width: 180px;  /* Aumente se quiser maior */
-    height: 180px; /* Mantém a proporção */
-    object-fit: cover;  /* Garante que a imagem não fique esticada */
-    border-radius: 50%;  /* Torna a imagem circular */
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
     margin: 20px auto;
-    border: 4px solid #157f3e; /* Borda verde */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 4px solid #157f3e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Seções */
+/* === SEÇÕES GERAIS === */
 section {
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #23406e;
 }
 
 h2 {
-    color: #157f3e;
     text-align: center;
-}
-
-/* Lista de Projetos */
-
-ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-ul li {
-    padding: 10px;
-    font-size: 1.2em;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #23406e;
-    font-weight: bold;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 2em;
     color: #157f3e;
 }
 
-footer {
-    background: #23406e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 0.9em;
-}
-
-section p {
-    text-align: justify;
-}
-
-
-/* Seção Meus Projetos */
-#projetos {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Projetos gerais (Colab e RMarkdown) */
+/* === PROJETOS GERAIS (Notebook e RMarkdown) === */
 .projetos-gerais {
-    text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .projetos-gerais .projeto {
     background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px auto;
-    max-width: 500px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .projetos-gerais .projeto h3 {
@@ -122,7 +86,7 @@ section p {
     display: inline-block;
     background: #157f3e;
     color: white;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -132,12 +96,12 @@ section p {
     background: #23406e;
 }
 
-/* Dashboards Power BI */
+/* === DASHBOARDS POWER BI === */
 .categoria h3 {
     color: #157f3e;
     text-align: center;
     font-size: 1.8em;
-    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .subcategoria {
@@ -147,42 +111,56 @@ section p {
 .subcategoria h4 {
     color: #23406e;
     font-size: 1.4em;
-    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
+/* Estrutura dos Projetos */
 .projeto {
     display: flex;
     align-items: center;
-    background: #f8f9fa;
-    border-radius: 8px;
+    background: white;
+    border-radius: 10px;
     padding: 15px;
     margin: 10px 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .projeto img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 8px;
-    margin-right: 15px;
-    border: 2px solid #157f3e;
+    margin-right: 20px;
+    border: 3px solid #157f3e;
 }
 
 .projeto p {
     flex: 1;
     text-align: justify;
+    font-size: 1.1em;
 }
 
+/* Botão */
 .projeto a {
     text-decoration: none;
     background: #157f3e;
     color: white;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .projeto a:hover {
     background: #23406e;
+}
+
+/* === RODAPÉ === */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
