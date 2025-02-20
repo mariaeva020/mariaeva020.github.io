@@ -164,3 +164,62 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+
+
+
+/* Grid de projetos para melhor organização */
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cada projeto ocupa 45% da tela para manter um layout equilibrado */
+.projeto {
+    background: white;
+    color: #23406e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos dos projetos */
+.projeto h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Links dos projetos */
+.projeto a {
+    display: inline-block;
+    background: #157f3e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projeto a:hover {
+    background: #23406e;
+}
+
+/* Botão centralizado */
+.botao-verde {
+    display: inline-block;
+    background: #157f3e;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.botao-verde:hover {
+    background: #23406e;
+}
