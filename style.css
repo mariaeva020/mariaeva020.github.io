@@ -1,22 +1,43 @@
-/* === ESTILIZAÇÃO GERAL === */
+/* === RESET GERAL === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* === ESTILO GERAL === */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #23406e 30%, #157f3e 100%);
     color: white;
+    padding: 20px;
 }
 
-/* === ESTILIZAÇÃO DO CABEÇALHO === */
+/* === SEÇÕES GERAIS === */
+section {
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #23406e;
+}
+
+/* Justificar textos e espaçamento entre parágrafos */
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* === CABEÇALHO === */
 header {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 header h1 {
@@ -31,128 +52,79 @@ header p {
 /* === FOTO DE PERFIL === */
 .foto-perfil {
     display: block;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin: 20px auto;
-    border: 4px solid #157f3e;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border: 5px solid #157f3e;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* === SEÇÕES GERAIS === */
-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: #23406e;
-}
-
+/* === TÍTULOS DAS SEÇÕES === */
 h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
+    margin-bottom: 30px;
+    font-size: 2.2em;
     color: #157f3e;
 }
 
-/* === PROJETOS GERAIS (Notebook e RMarkdown) === */
-.projetos-gerais {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/* === GRID DE PROJETOS === */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
 }
 
-.projetos-gerais .projeto {
-    background: #f8f9fa;
+/* === ESTILIZAÇÃO DOS PROJETOS === */
+.projeto {
+    background: white;
+    color: #23406e;
     padding: 20px;
     border-radius: 10px;
-    margin: 10px;
-    flex: 1;
-    min-width: 280px;
-    max-width: 45%;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.projetos-gerais .projeto h3 {
-    color: #23406e;
-}
-
-.projetos-gerais .projeto a {
-    display: inline-block;
-    background: #157f3e;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.projetos-gerais .projeto a:hover {
-    background: #23406e;
-}
-
-/* === DASHBOARDS POWER BI === */
-.categoria h3 {
-    color: #157f3e;
-    text-align: center;
-    font-size: 1.8em;
+/* Ajuste para melhor espaçamento dos textos dos projetos */
+.projeto p {
+    text-align: justify;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.subcategoria {
-    margin-top: 20px;
-}
-
-.subcategoria h4 {
-    color: #23406e;
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-/* Estrutura dos Projetos */
-.projeto {
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.projeto img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
-    border: 3px solid #157f3e;
-}
-
-.projeto p {
-    flex: 1;
-    text-align: justify;
-    font-size: 1.1em;
-}
-
-/* Botão */
+/* === BOTÕES DOS PROJETOS === */
 .projeto a {
-    text-decoration: none;
+    display: inline-block;
     background: #157f3e;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    margin-left: 20px;
+    font-size: 1em;
 }
 
 .projeto a:hover {
+    background: #23406e;
+}
+
+/* === BOTÃO PRINCIPAL CENTRALIZADO === */
+.botao-verde {
+    display: block;
+    background: #157f3e;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 300px;
+    margin: 30px auto 0;
+}
+
+.botao-verde:hover {
     background: #23406e;
 }
 
@@ -161,65 +133,7 @@ footer {
     background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 40px;
-}
-
-
-
-
-/* Grid de projetos para melhor organização */
-.projetos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Cada projeto ocupa 45% da tela para manter um layout equilibrado */
-.projeto {
-    background: white;
-    color: #23406e;
-    padding: 15px;
-    border-radius: 10px;
-    width: 45%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos dos projetos */
-.projeto h3 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-/* Links dos projetos */
-.projeto a {
-    display: inline-block;
-    background: #157f3e;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.projeto a:hover {
-    background: #23406e;
-}
-
-/* Botão centralizado */
-.botao-verde {
-    display: inline-block;
-    background: #157f3e;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.botao-verde:hover {
-    background: #23406e;
+    font-size: 1em;
 }
