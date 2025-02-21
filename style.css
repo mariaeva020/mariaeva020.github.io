@@ -147,7 +147,7 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/.projeto h3 {
+.projeto h3 {
     font-size: 1.4em;
     margin-bottom: 15px; /* Aumentei o espaço abaixo do título */
 }
