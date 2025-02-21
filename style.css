@@ -3,192 +3,122 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* === ESTILO GERAL === */
-body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #23406e 30%, #157f3e 100%);
+    scroll-behavior: smooth;
+}
+
+/* === MENU DE NAVEGAÇÃO === */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 20px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
 }
 
-/* === SEÇÕES GERAIS === */
-section {
-    width: 95%;
-    max-width: 1400px;
-    margin: 80px auto; /* Aumentei o espaçamento entre seções */
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-    color: #23406e;
+.menu {
+    list-style: none;
+    display: flex;
 }
 
-/* Justificar textos e espaçamento entre parágrafos */
-section p {
-    text-align: justify;
-    line-height: 1.8;
-    margin-bottom: 20px;
+.menu li {
+    margin: 0 20px;
 }
 
-/* === CABEÇALHO === */
-header {
-    background: rgba(0, 0, 0, 0.5);
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #157f3e;
+}
+
+/* === SEÇÃO HERO === */
+.hero {
+    background: linear-gradient(135deg, #23406e, #157f3e);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 150px 20px;
 }
 
-header h1 {
+.hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.4em;
+.botao {
+    background: #157f3e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-/* === FOTO DE PERFIL === */
-.foto-perfil {
-    display: block;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 20px auto;
-    border: 5px solid #157f3e;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+.botao:hover {
+    background: #23406e;
 }
 
-/* === TÍTULOS DAS SEÇÕES === */
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.2em;
-    color: #157f3e;
-}
-
-/* === GRID DE PROJETOS === */
-.projetos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px; /* Aumentei o espaçamento entre os projetos */
-    justify-content: center;
-}
-
-/* === ESTILIZAÇÃO DOS PROJETOS === */
-.projeto {
+/* === SEÇÃO SOBRE === */
+.sobre-container {
     display: flex;
     align-items: center;
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 30px 0; /* Aumentei o espaçamento entre os projetos */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    gap: 30px;
+    margin-top: 20px;
 }
 
-/* Imagens alinhadas à esquerda e menores */
-.projeto img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 25px; /* Aumentei o espaço entre imagem e texto */
-    border: 3px solid #157f3e;
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #157f3e;
 }
 
-/* Ajuste para melhor espaçamento dos textos dos projetos */
-.projeto p {
+.texto {
     flex: 1;
     text-align: justify;
-    font-size: 1.1em;
-    line-height: 1.6;
 }
 
-/* === BOTÕES DOS PROJETOS === */
-.projeto a {
-    display: inline-block;
-    background: #157f3e;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 15px; /* Afastando o botão do texto */
-}
-
-.projeto a:hover {
-    background: #23406e;
-}
-
-/* === SEPARAÇÃO MAIOR ENTRE OS TIPOS DE NOTEBOOKS === */
-.subcategoria {
-    margin-top: 50px; /* Antes estava 40px, aumentei o espaço entre categorias */
-}
-
-/* Criando mais espaço entre os projetos dentro das categorias */
+/* === SEÇÃO PROJETOS === */
 .projetos-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px; /* Antes estava 40px, aumentei ainda mais */
-    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-/* Cada projeto ocupa um espaço adequado e alinhado */
 .projeto {
+    display: flex;
     background: white;
-    color: #23406e;
-    padding: 20px;
     border-radius: 10px;
-    width: 48%;
-    text-align: left;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/.projeto h3 {
-    font-size: 1.4em;
-    margin-bottom: 15px; /* Aumentei o espaço abaixo do título */
+.projeto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
-/* Melhorando espaçamento dos textos dentro dos projetos */
-.projeto p {
-    text-align: justify;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* Espaçamento entre os títulos das categorias */
-h4 {
-    margin-bottom: 20px;
-}
-
-/* Botão do notebook mais espaçado e alinhado */
-.botao-verde {
-    display: block;
-    background: #157f3e;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+/* === SEÇÃO CONTATO === */
+#contato {
     text-align: center;
-    max-width: 300px;
-    margin: 50px auto 0; /* Antes estava 40px, aumentando o espaço superior */
-}
-
-.botao-verde:hover {
-    background: #23406e;
 }
 
 /* === RODAPÉ === */
 footer {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.9);
     color: white;
     text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    font-size: 1em;
+    padding: 20px;
+    margin-top: 40px;
 }
