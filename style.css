@@ -73,21 +73,23 @@ h2 {
 .projetos-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px; /* Aumentei o espaçamento entre os projetos */
+    gap: 20px;  /* Espaço entre os cards */
     justify-content: center;
 }
 
 /* === ESTILIZAÇÃO DOS PROJETOS === */
 .projeto {
     display: flex;
+    flex-direction: row; /* Faz os elementos ficarem lado a lado */
+
     align-items: center;
     background: white;
     border-radius: 10px;
-    padding: 30px;  /* Aumenta o espaço interno */
-    margin: 30px 0; /* Aumentei o espaçamento entre os projetos */
+    padding: 20px;  /* Aumenta o espaço interno */
+    margin: 20px 0; /* Aumentei o espaçamento entre os projetos */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    width: 90%; /* Garante que os projetos não fiquem muito compactos */
-    max-width: 900px; /* Define um tamanho máximo para os blocos */
+    width: 100%; /* Ocupar toda a largura disponível */
+    max-width: 1100px; /* Define um limite para não ficar muito esticado */
 
 }
 
@@ -98,7 +100,7 @@ h2 {
     object-fit: cover;
     border-radius: 8px;
     margin-right: 25px; /* Aumentei o espaço entre imagem e texto */
-    border: 3px solid #157f3e;
+    border: 2px solid #157f3e;
 }
 
 /* Ajuste para melhor espaçamento dos textos dos projetos */
@@ -112,7 +114,7 @@ h2 {
 
 /* === BOTÕES DOS PROJETOS === */
 .projeto a {
-    margin-top: 10px; /* Adiciona um espaço acima do botão */
+    /*margin-top: 10px; /* Adiciona um espaço acima do botão */
 
     display: inline-block;
     background: #157f3e;
