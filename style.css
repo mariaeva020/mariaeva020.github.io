@@ -125,7 +125,7 @@ section {
 .projetos-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* Estiliza os itens individuais do grid de projetos */
@@ -170,6 +170,8 @@ section {
     font-size: 1em;
     display: flex;
     align-items: center;
+    margin-left: 15px; /* Adiciona um pequeno afastamento do texto ao botão */
+
 }
 
 .projeto a:hover {
