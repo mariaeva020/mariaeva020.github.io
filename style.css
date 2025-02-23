@@ -178,15 +178,15 @@ section {
 }
 
 .texto-projeto {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto */
+    justify-content: center; /* Mantém o texto centralizado horizontalmente */
+    text-align: left; /* Texto alinhado à esquerda */
+    flex: 1; /* Ocupa o máximo de espaço disponível */
     font-size: 16px;
-    line-height: 1.6;
-    margin-right: 10px; /* Espaço apenas antes do botão */
-    white-space: nowrap; /* Garante que o texto continue na mesma linha */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Se o espaço for pequeno, adiciona "..." */
-    flex: 1; /* Faz com que o texto ocupe o espaço disponível */
+    line-height: 1.5; /* Aumenta a altura das linhas para melhor legibilidade */
+    padding-right: 15px; /* Espaçamento entre o texto e o botão */
 }
-
 /* Ajusta o botão para que ele fique melhor posicionado */
 /* Botão dentro dos projetos */
 .projeto a {
