@@ -172,8 +172,10 @@ section {
     font-size: 1em;
     line-height: 1.6;*/
    /* max-width: 75%;  */
-
-   margin-top: 0; /* Evita espaçamentos excessivos */
+   
+    text-align: justify; /* Justifica o texto */
+    text-justify: inter-word; /* Melhora a distribuição das palavras */
+    margin-top: 0; /* Evita espaçamentos excessivos */
 
     display: block;  /* Mantém a descrição separada */
     font-size: 16px; /* Tamanho da fonte ajustável */
