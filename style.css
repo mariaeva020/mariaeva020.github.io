@@ -230,6 +230,7 @@ footer {
 
 
 /* Estilização do Título de Contato */
+/* Estilização do Título de Contato */
 .titulo-contato {
     text-align: center;
     font-size: 2em;
@@ -255,6 +256,9 @@ footer {
 /* Cada item de contato */
 .contato-item {
     font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Links */
