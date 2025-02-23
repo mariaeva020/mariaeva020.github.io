@@ -171,14 +171,17 @@ section {
 
 
 .titulo-projeto {
-    display: block; /* Força o título a ocupar uma linha separada */
-    font-size: 18px; /* Ajuste conforme necessário */
-    font-weight: bold; /* Deixa o título mais destacado */
-    margin-bottom: 5px; /* Espaço entre o título e a descrição */
-    width: 100%; /* Garante que ele ocupe toda a largura disponível */
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px; /* Pequeno espaço entre o título e a descrição */
+    white-space: nowrap; /* Evita quebra de linha no título */
 }
 
-
+.descricao-projeto {
+    flex: 1; /* Permite que o texto da descrição ocupe o espaço disponível */
+    white-space: normal; /* Mantém a quebra natural de linha quando necessário */
+    margin-right: 10px;
+}
 
 /* Ajusta o botão para que ele fique melhor posicionado */
 /* Botão dentro dos projetos */
