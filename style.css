@@ -146,18 +146,26 @@ section {
 /* Ajusta o título para não ficar pequeno e ocupar mais espaço */
 /* Estilo do texto dentro dos projetos */
 .projeto h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    /*font-size: 1.2em;
+    margin-bottom: 5px;*/
+
+    display: block;  /* Garante que o título fique sempre em uma linha separada */
+    font-size: 18px; /* Tamanho ajustável para melhor legibilidade */
+    margin-bottom: 5px; /* Pequeno espaço entre o título e a descrição */
 }
 
 /* Ajusta o texto para expandir mais */
 .projeto p {
-    flex: 1;
+   /* flex: 1;
     text-align: justify;
     font-size: 1em;
-    line-height: 1.6;
-    max-width: 75%; /* Garante que o texto ocupe um espaço maior */
+    line-height: 1.6;*/
+   /* max-width: 75%;  */
 
+
+    display: block;  /* Mantém a descrição separada */
+    font-size: 16px; /* Tamanho da fonte ajustável */
+    color: #333; /* Cor do texto para melhor contraste */
 }
 
 /* Ajusta o botão para que ele fique melhor posicionado */
