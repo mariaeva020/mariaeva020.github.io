@@ -1,43 +1,22 @@
-/* === RESET GERAL === */
+/* === ESTILIZAÇÃO GERAL === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* === ESTILO GERAL === */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #23406e 30%, #157f3e 100%);
     color: white;
-    padding: 20px;
 }
 
-/* === SEÇÕES GERAIS === */
-section {
-    width: 95%;
-    max-width: 1400px;
-    margin: 80px auto; /* Aumentei o espaçamento entre seções */
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-    color: #23406e;
-}
-
-/* Justificar textos e espaçamento entre parágrafos */
-section p {
-    text-align: justify;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* === CABEÇALHO === */
+/* === ESTILIZAÇÃO DO CABEÇALHO === */
 header {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 header h1 {
@@ -52,145 +31,128 @@ header p {
 /* === FOTO DE PERFIL === */
 .foto-perfil {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
     margin: 20px auto;
-    border: 5px solid #157f3e;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    border: 4px solid #157f3e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* === TÍTULOS DAS SEÇÕES === */
+/* === SEÇÕES GERAIS === */
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #23406e;
+}
+
 h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-size: 2em;
     color: #157f3e;
 }
 
-/* === GRID DE PROJETOS === */
-/* Ajusta o container dos projetos para ocupar toda a largura */
-
-.projetos-grid {
+/* === PROJETOS GERAIS (Notebook e RMarkdown) === */
+.projetos-gerais {
     display: flex;
-    flex-direction: column; /* Garante que os cards fiquem um abaixo do outro */
-    align-items: center;
-    width: 100%;
-    max-width: 1400px; /* Define um limite máximo */
-    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* === ESTILIZAÇÃO DOS PROJETOS === */
-.projeto {
-    display: flex;
-    flex-direction: row; /* Garante que os elementos fiquem lado a lado */
-    align-items: center;
-    background: white;
+.projetos-gerais .projeto {
+    background: #f8f9fa;
+    padding: 20px;
     border-radius: 10px;
-    padding: 30px;
-    margin: 20px 0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    width: 95%; /* Ocupa quase toda a largura disponível */
-    max-width: 1200px; /* Ajustado para telas grandes */
-
-    justify-content: space-between; /* Distribui melhor os elementos */
-
-}
-
-/* Imagens alinhadas à esquerda e menores */
-.projeto img {
-    width: 180px; /* Maior para melhor visualização */
-    height: auto;
-    border-radius: 8px;
-    margin-right: 40px; /* Dá mais espaço entre a imagem e o texto */
-}
-
-/* Ajuste para melhor espaçamento dos textos dos projetos */
-.projeto p {
+    margin: 10px;
     flex: 1;
-    text-align: justify;
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    min-width: 280px;
+    max-width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* === BOTÕES DOS PROJETOS === */
-.projeto a {
-    /*margin-top: 10px; /* Adiciona um espaço acima do botão */
+.projetos-gerais .projeto h3 {
+    color: #23406e;
+}
 
+.projetos-gerais .projeto a {
     display: inline-block;
     background: #157f3e;
     color: white;
-    padding: 12px 18px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em;
-    margin-left: 15px; /* Afastando o botão do texto */
 }
 
-.projeto a:hover {
+.projetos-gerais .projeto a:hover {
     background: #23406e;
 }
 
-/* === SEPARAÇÃO MAIOR ENTRE OS TIPOS DE NOTEBOOKS === */
+/* === DASHBOARDS POWER BI === */
+.categoria h3 {
+    color: #157f3e;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
 .subcategoria {
-    margin-top: 50px; /* Antes estava 40px, aumentei o espaço entre categorias */
+    margin-top: 20px;
 }
 
-/* Criando mais espaço entre os projetos dentro das categorias */
-.projetos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px; /* Antes estava 40px, aumentei ainda mais */
-    justify-content: center;
-}
-
-/* Cada projeto ocupa um espaço adequado e alinhado */
-.projeto {
-    background: white;
+.subcategoria h4 {
     color: #23406e;
-    padding: 20px;
-    border-radius: 10px;
-    width: 48%;
-    text-align: left;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.projeto h3 {
     font-size: 1.4em;
-    margin-bottom: 15px; /* Aumentei o espaço abaixo do título */
+    margin-bottom: 10px;
 }
 
-/* Melhorando espaçamento dos textos dentro dos projetos */
+/* Estrutura dos Projetos */
+.projeto {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projeto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: 3px solid #157f3e;
+}
+
 .projeto p {
+    flex: 1;
     text-align: justify;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    font-size: 1.1em;
 }
 
-/* Espaçamento entre os títulos das categorias */
-h4 {
-    margin-bottom: 20px;
-}
-
-/* Botão do notebook mais espaçado e alinhado */
-.botao-verde {
-    display: block;
+/* Botão */
+.projeto a {
+    text-decoration: none;
     background: #157f3e;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
-    max-width: 300px;
-    margin: 50px auto 0; /* Antes estava 40px, aumentando o espaço superior */
+    display: inline-block;
+    margin-left: 20px;
 }
 
-.botao-verde:hover {
+.projeto a:hover {
     background: #23406e;
 }
 
@@ -199,98 +161,6 @@ footer {
     background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    font-size: 1em;
-}
-
-
-
-/* === MENU FIXO NO TOPO === */
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    position: relative;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: all 0.3s;
-}
-
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
-/* === DROPDOWN === */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    top: 40px;
-    left: 0;
-    min-width: 180px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-.dropdown-content a {
-    color: #23406e;
-    padding: 10px;
-    display: block;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* === MENU MOBILE === */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 15px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
+    padding: 20px;
+    margin-top: 40px;
 }
