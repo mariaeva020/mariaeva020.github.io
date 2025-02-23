@@ -1,124 +1,145 @@
 /* === RESET GERAL === */
+/* Remove as margens e o preenchimento padrão de todos os elementos */
 * {
     margin: 0;
     padding: 0;
+    /* Faz com que o tamanho do elemento inclua bordas e padding no cálculo do width/height */
     box-sizing: border-box;
+    /* Define a fonte padrão para todo o site */
     font-family: Arial, sans-serif;
+    /* Adiciona um efeito suave ao rolar a página */
     scroll-behavior: smooth;
 }
 
 /* === MENU DE NAVEGAÇÃO === */
+/* Estiliza a barra de navegação */
 nav {
-    position: fixed;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px 50px;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
+    position: fixed; /* Mantém o menu fixo no topo da página */
+    width: 100%; /* Ocupará toda a largura da tela */
+    background: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    color: white; /* Texto branco */
+    padding: 15px 50px; /* Espaçamento interno */
+    display: flex; /* Usa o modelo flexbox para alinhamento */
+    justify-content: center; /* Centraliza os itens no eixo horizontal */
+    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
 }
 
+/* Define a estrutura do menu */
 .menu {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Organiza os itens do menu lado a lado */
 }
 
+/* Estiliza os itens da lista dentro do menu */
 .menu li {
-    margin: 0 20px;
+    margin: 0 20px; /* Espaçamento horizontal entre os itens */
 }
 
+/* Estiliza os links do menu */
 .menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor branca para os links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: 0.3s; /* Adiciona um efeito de transição suave */
 }
 
+/* Define o efeito de hover (quando o mouse passa por cima) dos links do menu */
 .menu a:hover {
-    color: #157f3e;
+    color: #157f3e; /* Muda a cor do texto para verde ao passar o mouse */
 }
 
 /* === SEÇÃO HERO === */
+/* Define a seção inicial do site */
 .hero {
-    background: linear-gradient(135deg, #23406e, #157f3e);
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
+    background: linear-gradient(135deg, #23406e, #157f3e); /* Aplica um degradê de azul para verde */
+    color: white; /* Define a cor do texto como branca */
+    text-align: center; /* Centraliza o texto */
+    padding: 150px 20px; /* Define o espaçamento interno */
 }
 
+/* Estiliza o título principal na seção HERO */
 .hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3em; /* Define um tamanho grande para o título */
+    margin-bottom: 10px; /* Adiciona um pequeno espaçamento abaixo do título */
 }
 
+/* Estiliza o botão da seção HERO */
 .botao {
-    background: #157f3e;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
+    background: #157f3e; /* Define a cor de fundo como verde */
+    color: white; /* Cor do texto branco */
+    padding: 12px 20px; /* Define um espaçamento interno */
+    border-radius: 5px; /* Arredonda as bordas */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    display: inline-block; /* Permite que o botão respeite margens */
+    margin-top: 20px; /* Adiciona espaçamento acima */
 }
 
+/* Efeito ao passar o mouse sobre o botão */
 .botao:hover {
-    background: #23406e;
+    background: #23406e; /* Muda a cor de fundo para azul */
 }
 
 /* === SEÇÃO SOBRE === */
+/* Define a estrutura da seção "Sobre" */
 .sobre-container {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-top: 20px;
+    display: flex; /* Usa o modelo flexbox para organizar os elementos */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 30px; /* Espaço entre os elementos */
+    margin-top: 20px; /* Espaçamento superior */
 }
 
+/* Estiliza a imagem de perfil */
 .foto-perfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 4px solid #157f3e;
+    width: 200px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    border: 4px solid #157f3e; /* Adiciona uma borda verde */
 }
 
+/* Estiliza o texto da seção "Sobre" */
 .texto {
-    flex: 1;
-    text-align: justify;
+    flex: 1; /* Faz o texto ocupar o espaço restante no flexbox */
+    text-align: justify; /* Justifica o texto */
 }
 
 /* === SEÇÃO PROJETOS === */
+/* Define a grade dos projetos */
 .projetos-grid {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
+    display: flex; /* Usa flexbox para organizar os projetos em linha */
+    gap: 30px; /* Espaçamento entre os projetos */
+    margin-top: 20px; /* Espaçamento superior */
 }
 
+/* Estiliza os itens individuais do grid de projetos */
 .projeto {
-    display: flex;
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Organiza o conteúdo do projeto horizontalmente */
+    background: white; /* Define o fundo branco */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
 }
 
+/* Estiliza as imagens dentro dos projetos */
 .projeto img {
-    width: 120px;
-    height: 120px;
-    border-radius: 8px;
-    margin-right: 20px;
+    width: 120px; /* Define um tamanho fixo para as imagens */
+    height: 120px; /* Define um tamanho fixo para as imagens */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
 }
 
 /* === SEÇÃO CONTATO === */
+/* Centraliza o texto da seção de contato */
 #contato {
     text-align: center;
 }
 
 /* === RODAPÉ === */
+/* Define a estilização do rodapé */
 footer {
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.9); /* Define um fundo preto com leve transparência */
+    color: white; /* Cor do texto branco */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 40px; /* Adiciona espaçamento superior */
 }
