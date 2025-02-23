@@ -339,6 +339,16 @@ footer {
     margin-top: 40px; /* Aumenta o espaço antes do título da categoria */
 }
 
+
+#sobre .texto p {
+    margin-bottom: 20px; /* Adiciona espaçamento entre os parágrafos */
+    text-align: justify; /* Justifica o texto */
+    text-justify: inter-word; /* Melhora a distribuição das palavras */
+}
+
+
+
+
 /* Ajuste extra para melhorar a disposição dos elementos */
 /* Responsividade para telas menores */
 @media (max-width: 1024px) {
