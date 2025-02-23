@@ -284,6 +284,15 @@ footer {
 }
 
 
+
+.categoria p {
+    margin-bottom: 30px; /* Aumenta o espaço abaixo do texto */
+}
+
+.subcategoria {
+    margin-top: 40px; /* Aumenta o espaço antes do título da categoria */
+}
+
 /* Ajuste extra para melhorar a disposição dos elementos */
 /* Responsividade para telas menores */
 @media (max-width: 1024px) {
