@@ -92,7 +92,10 @@ h2 {
     margin: 20px 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     width: 95%; /* Ocupa quase toda a largura disponível */
-    max-width: 1300px; /* Ajustado para telas grandes */
+    max-width: 1200px; /* Ajustado para telas grandes */
+
+    justify-content: space-between; /* Distribui melhor os elementos */
+
 }
 
 /* Imagens alinhadas à esquerda e menores */
