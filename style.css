@@ -347,13 +347,18 @@ footer {
 }
 
 
-#sobre h2 {
-    text-align: center; /* Centraliza o título */
-    font-size: 28px; /* Ajusta o tamanho da fonte (opcional) */
-    font-weight: bold; /* Deixa o título mais destacado */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+#sobre {
+    text-align: center; /* Centraliza todo o conteúdo da seção */
 }
 
+#sobre h2 {
+    display: block;
+    width: 100%;
+    text-align: center; /* Centraliza especificamente o título */
+    font-size: 28px; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Mantém o título destacado */
+    margin-bottom: 20px; /* Adiciona espaçamento entre o título e o conteúdo */
+}
 
 /* Ajuste extra para melhorar a disposição dos elementos */
 /* Responsividade para telas menores */
