@@ -73,6 +73,8 @@ nav {
     font-weight: bold; /* Deixa o texto em negrito */
     display: inline-block; /* Permite que o botão respeite margens */
     margin-top: 20px; /* Adiciona espaçamento acima */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+
 }
 
 /* Efeito ao passar o mouse sobre o botão */
