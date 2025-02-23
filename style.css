@@ -366,6 +366,19 @@ footer {
     margin-bottom: 20px; /* Adiciona espaçamento entre o título e o conteúdo */
 }
 
+
+
+
+.imagem-capa {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+
 /* Ajuste extra para melhorar a disposição dos elementos */
 /* Responsividade para telas menores */
 @media (max-width: 1024px) {
