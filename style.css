@@ -109,6 +109,13 @@ nav {
     display: flex; /* Usa flexbox para organizar os projetos em linha */
     gap: 30px; /* Espaçamento entre os projetos */
     margin-top: 20px; /* Espaçamento superior */
+
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Limite para telas muito grandes */
+    margin: 0 auto;
 }
 
 /* Estiliza os itens individuais do grid de projetos */
@@ -116,9 +123,71 @@ nav {
     display: flex; /* Organiza o conteúdo do projeto horizontalmente */
     background: white; /* Define o fundo branco */
     border-radius: 10px; /* Borda arredondada */
-    padding: 15px; /* Espaçamento interno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra leve */
+
+    flex-direction: row; /* Mantém os elementos lado a lado */
+    align-items: center;
+    justify-content: space-between; /* Distribui melhor os elementos */
+
+    margin: 20px 0;
+    
+    width: 90%; /* Faz com que ocupe quase toda a tela */
+    max-width: 1400px; /* Define um limite maior para telas grandes */
+
+
 }
+
+/* Ajusta o título para não ficar pequeno e ocupar mais espaço */
+.projeto h3 {
+    font-size: 1.5em; /* Aumenta o tamanho do título */
+    white-space: nowrap; /* Evita quebra de linha */
+}
+
+/* Ajusta o texto para expandir mais */
+.projeto p {
+    flex: 2; /* Aumenta a largura do texto para ocupar mais espaço */
+    text-align: justify;
+    font-size: 1.2em; /* Tamanho do texto maior */
+    line-height: 1.8; /* Mais espaço entre as linhas */
+    padding-right: 50px; /* Adiciona espaço entre o texto e o botão */
+}
+
+/* Ajusta o botão para que ele fique melhor posicionado */
+.projeto a {
+    padding: 16px 24px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: auto; /* Empurra o botão para a direita */
+    white-space: nowrap; /* Evita que o texto do botão quebre */
+}
+
+/* Ajuste extra para melhorar a disposição dos elementos */
+@media (max-width: 1024px) {
+    .projeto {
+        flex-direction: column; /* Em telas menores, muda para coluna */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .projeto img {
+        width: 100%; /* Ajusta a imagem para telas menores */
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .projeto a {
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Estiliza as imagens dentro dos projetos */
 .projeto img {
