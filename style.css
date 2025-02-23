@@ -74,10 +74,10 @@ h2 {
 
 .projetos-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Garante que os cards fiquem um abaixo do outro */
     align-items: center;
     width: 100%;
-    max-width: 1300px; /* Aumenta o limite máximo */
+    max-width: 1400px; /* Define um limite máximo */
     margin: 0 auto;
 }
 
@@ -91,18 +91,16 @@ h2 {
     padding: 30px;
     margin: 20px 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    width: 100%; /* Agora ocupa toda a largura */
-    max-width: 1200px; /* Define um limite maior */
+    width: 95%; /* Ocupa quase toda a largura disponível */
+    max-width: 1300px; /* Ajustado para telas grandes */
 }
 
 /* Imagens alinhadas à esquerda e menores */
 .projeto img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 180px; /* Maior para melhor visualização */
+    height: auto;
     border-radius: 8px;
-    margin-right: 25px; /* Aumentei o espaço entre imagem e texto */
-    border: 2px solid #157f3e;
+    margin-right: 40px; /* Dá mais espaço entre a imagem e o texto */
 }
 
 /* Ajuste para melhor espaçamento dos textos dos projetos */
@@ -116,19 +114,11 @@ h2 {
 
 /* === BOTÕES DOS PROJETOS === */
 .projeto a {
-    /*margin-top: 10px; /* Adiciona um espaço acima do botão */
-
-    display: inline-block;
-    background: #157f3e;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 15px; /* Afastando o botão do texto */
+    padding: 14px 22px;
+    font-size: 1.1em;
+    margin-left: 40px; /* Afasta o botão do texto */
+    white-space: nowrap; /* Evita quebra de linha no botão */
 }
-
 .projeto a:hover {
     background: #23406e;
 }
