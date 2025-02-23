@@ -75,6 +75,15 @@ nav {
     margin-top: 20px; /* Adiciona espaçamento acima */
     white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 
+
+
+
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 10px 20px; /* Ajuste do espaçamento interno */
+    font-size: 16px; /* Garante que a fonte fique legível */
+    min-width: 160px; /* Evita que o botão fique pequeno demais */
+
 }
 
 /* Efeito ao passar o mouse sobre o botão */
