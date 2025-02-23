@@ -133,11 +133,11 @@ section {
     display: flex;
     align-items: center;
     background: white;
-    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease-in-out;
-    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 25px; /* Aumenta a distância entre os elementos dentro do card */
+    margin-bottom: 25px; /* Aumenta o espaço entre os cards */
 }
 
 .projeto:hover {
@@ -156,6 +156,8 @@ section {
     text-align: justify;
     font-size: 1em;
     line-height: 1.6;
+    max-width: 75%; /* Garante que o texto ocupe um espaço maior */
+
 }
 
 /* Ajusta o botão para que ele fique melhor posicionado */
@@ -170,9 +172,10 @@ section {
     font-size: 1em;
     display: flex;
     align-items: center;
-    margin-left: 15px; /* Adiciona um pequeno afastamento do texto ao botão */
-
+    justify-content: center;
+    margin-left: auto; /* Empurra o botão para a direita */
 }
+
 
 .projeto a:hover {
     background: #23406e;
