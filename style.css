@@ -162,6 +162,7 @@ section {
     line-height: 1.6;*/
    /* max-width: 75%;  */
 
+   margin-top: 0; /* Evita espaçamentos excessivos */
 
     display: block;  /* Mantém a descrição separada */
     font-size: 16px; /* Tamanho da fonte ajustável */
@@ -170,12 +171,13 @@ section {
 
 
 .titulo-projeto {
-    display: block; /* Força o título a ocupar toda a linha */
-    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    display: block; /* Força o título a ocupar uma linha separada */
+    font-size: 18px; /* Ajuste conforme necessário */
     font-weight: bold; /* Deixa o título mais destacado */
-    white-space: nowrap; /* Impede que o título quebre em múltiplas linhas */
     margin-bottom: 5px; /* Espaço entre o título e a descrição */
+    width: 100%; /* Garante que ele ocupe toda a largura disponível */
 }
+
 
 
 /* Ajusta o botão para que ele fique melhor posicionado */
