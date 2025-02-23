@@ -105,37 +105,27 @@ nav {
 
 /* === SEÇÃO PROJETOS === */
 /* Define a grade dos projetos */
+/* Ajuste do container dos projetos */
 .projetos-grid {
-    display: flex; /* Usa flexbox para organizar os projetos em linha */
-    gap: 30px; /* Espaçamento entre os projetos */
-    margin-top: 20px; /* Espaçamento superior */
-
-
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1400px; /* Limite para telas muito grandes */
+    max-width: 1200px; /* Define um limite de largura */
     margin: 0 auto;
 }
 
 /* Estiliza os itens individuais do grid de projetos */
 .projeto {
-    display: flex; /* Organiza o conteúdo do projeto horizontalmente */
-    background: white; /* Define o fundo branco */
-    border-radius: 10px; /* Borda arredondada */
-    padding: 30px; /* Espaçamento interno */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra leve */
-
-    flex-direction: row; /* Mantém os elementos lado a lado */
+    display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui melhor os elementos */
-
-    margin: 20px 0;
-    
-    width: 90%; /* Faz com que ocupe quase toda a tela */
-    max-width: 1400px; /* Define um limite maior para telas grandes */
-
-
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px; /* Define um limite para a largura */
 }
 
 /* Ajusta o título para não ficar pequeno e ocupar mais espaço */
@@ -146,7 +136,7 @@ nav {
 
 /* Ajusta o texto para expandir mais */
 .projeto p {
-    flex: 2; /* Aumenta a largura do texto para ocupar mais espaço */
+    flex: 1; /* Aumenta a largura do texto para ocupar mais espaço */
     text-align: justify;
     font-size: 1.2em; /* Tamanho do texto maior */
     line-height: 1.8; /* Mais espaço entre as linhas */
@@ -155,32 +145,19 @@ nav {
 
 /* Ajusta o botão para que ele fique melhor posicionado */
 .projeto a {
-    padding: 16px 24px;
-    font-size: 1.2em;
+    background: #157f3e;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
-    margin-left: auto; /* Empurra o botão para a direita */
-    white-space: nowrap; /* Evita que o texto do botão quebre */
+    font-size: 1em;
+    white-space: nowrap; /* Evita quebra de linha no botão */
 }
 
-/* Ajuste extra para melhorar a disposição dos elementos */
-@media (max-width: 1024px) {
-    .projeto {
-        flex-direction: column; /* Em telas menores, muda para coluna */
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .projeto img {
-        width: 100%; /* Ajusta a imagem para telas menores */
-        max-width: 300px;
-        margin-bottom: 20px;
-    }
-
-    .projeto a {
-        align-self: center;
-    }
+.projeto a:hover {
+    background: #23406e;
 }
-
 
 
 
@@ -192,9 +169,10 @@ nav {
 /* Estiliza as imagens dentro dos projetos */
 .projeto img {
     width: 120px; /* Define um tamanho fixo para as imagens */
-    height: 120px; /* Define um tamanho fixo para as imagens */
-    border-radius: 8px; /* Bordas arredondadas */
-    margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    border: 3px solid #157f3e; /* Borda para destacar a imagem */
 }
 
 /* === SEÇÃO CONTATO === */
@@ -211,4 +189,25 @@ footer {
     text-align: center; /* Centraliza o conteúdo */
     padding: 20px; /* Espaçamento interno */
     margin-top: 40px; /* Adiciona espaçamento superior */
+}
+
+/* Ajuste extra para melhorar a disposição dos elementos */
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .projeto {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .projeto img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .projeto a {
+        align-self: center;
+        margin-top: 10px;
+    }
 }
