@@ -83,15 +83,18 @@ h2 {
     align-items: center;
     background: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;  /* Aumenta o espaço interno */
     margin: 30px 0; /* Aumentei o espaçamento entre os projetos */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 90%; /* Garante que os projetos não fiquem muito compactos */
+    max-width: 900px; /* Define um tamanho máximo para os blocos */
+
 }
 
 /* Imagens alinhadas à esquerda e menores */
 .projeto img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 25px; /* Aumentei o espaço entre imagem e texto */
@@ -102,12 +105,15 @@ h2 {
 .projeto p {
     flex: 1;
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 /* === BOTÕES DOS PROJETOS === */
 .projeto a {
+    margin-top: 10px; /* Adiciona um espaço acima do botão */
+
     display: inline-block;
     background: #157f3e;
     color: white;
