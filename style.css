@@ -216,6 +216,18 @@ footer {
     margin-top: 40px; /* Adiciona espaçamento superior */
 }
 
+
+.titulo-dashboards {
+    text-align: center; /* Centraliza o título */
+    font-size: 2em; /* Aumenta o tamanho */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    color: #157f3e; /* Cor verde */
+    margin-bottom: 20px;
+}
+
+
+
+
 /* Ajuste extra para melhorar a disposição dos elementos */
 /* Responsividade para telas menores */
 @media (max-width: 1024px) {
