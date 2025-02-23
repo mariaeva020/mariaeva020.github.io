@@ -168,6 +168,16 @@ section {
     color: #333; /* Cor do texto para melhor contraste */
 }
 
+
+.titulo-projeto {
+    display: block; /* Força o título a ocupar toda a linha */
+    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    font-weight: bold; /* Deixa o título mais destacado */
+    white-space: nowrap; /* Impede que o título quebre em múltiplas linhas */
+    margin-bottom: 5px; /* Espaço entre o título e a descrição */
+}
+
+
 /* Ajusta o botão para que ele fique melhor posicionado */
 /* Botão dentro dos projetos */
 .projeto a {
