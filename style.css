@@ -177,10 +177,14 @@ section {
     white-space: nowrap; /* Evita quebra de linha no título */
 }
 
-.descricao-projeto {
-    flex: 1; /* Permite que o texto da descrição ocupe o espaço disponível */
-    white-space: normal; /* Mantém a quebra natural de linha quando necessário */
-    margin-right: 10px;
+.texto-projeto {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 10px; /* Espaço apenas antes do botão */
+    white-space: nowrap; /* Garante que o texto continue na mesma linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Se o espaço for pequeno, adiciona "..." */
+    flex: 1; /* Faz com que o texto ocupe o espaço disponível */
 }
 
 /* Ajusta o botão para que ele fique melhor posicionado */
