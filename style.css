@@ -70,27 +70,29 @@ h2 {
 }
 
 /* === GRID DE PROJETOS === */
+/* Ajusta o container dos projetos para ocupar toda a largura */
+
 .projetos-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;  /* Espaço entre os cards */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px; /* Aumenta o limite máximo */
+    margin: 0 auto;
 }
 
 /* === ESTILIZAÇÃO DOS PROJETOS === */
 .projeto {
     display: flex;
-    flex-direction: row; /* Faz os elementos ficarem lado a lado */
-
+    flex-direction: row; /* Garante que os elementos fiquem lado a lado */
     align-items: center;
     background: white;
     border-radius: 10px;
-    padding: 20px;  /* Aumenta o espaço interno */
-    margin: 20px 0; /* Aumentei o espaçamento entre os projetos */
+    padding: 30px;
+    margin: 20px 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    width: 100%; /* Ocupar toda a largura disponível */
-    max-width: 1100px; /* Define um limite para não ficar muito esticado */
-
+    width: 100%; /* Agora ocupa toda a largura */
+    max-width: 1200px; /* Define um limite maior */
 }
 
 /* Imagens alinhadas à esquerda e menores */
