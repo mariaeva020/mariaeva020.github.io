@@ -369,6 +369,21 @@ footer {
 
 
 
+.descricao {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.descricao li {
+    margin: 5px 0; /* Adiciona espaço entre os itens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+}
 
 
 
